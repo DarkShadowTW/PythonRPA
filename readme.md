@@ -11,27 +11,25 @@
 
 1. ANACONDA : 
 
->選擇 Create
-![img.png](/readme/img.png)
-
->安裝 Python Version 3.7.13
-![img_1.png](/readme/img_1.png)
-
->選擇 Open Terminal
-![img_2.png](/readme/img_2.png)
+>選擇 Create  
+> ![img.png](/readme/img.png)
+>安裝 Python Version 3.7.13  
+>![img_1.png](/readme/img_1.png)
+>選擇 Open Terminal  
+>![img_2.png](/readme/img_2.png)
 
 >在 Terminal 視窗內安裝 Python 套件:
-安裝 opencv  
-pip install numpy==1.15.3  
-pip install matplotlib==3.0.1  
-pip install opencv-python==3.4.2.16  
-pip install opencv-contrib-python==3.4.2.16  
+>安裝 opencv  
+>pip install numpy==1.15.3  
+>pip install matplotlib==3.0.1  
+>pip install opencv-python==3.4.2.16  
+>pip install opencv-contrib-python==3.4.2.16
 
 >安裝 PyWin32 用於視窗相關控制  
-pip install --ignore-installed --upgrade PyWin32  
+>pip install --ignore-installed --upgrade PyWin32
 
 >安裝 pyautogui 用於 RPA 相關操作  
-pip install --ignore-installed --upgrade pyautogui
+>pip install --ignore-installed --upgrade pyautogui
 
 2. PYCHARM 設置 ANACONDA 
 
