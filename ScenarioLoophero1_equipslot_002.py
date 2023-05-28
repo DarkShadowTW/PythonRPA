@@ -1,12 +1,14 @@
 import LibRPA as rpa
 from PIL import ImageGrab
 
-#從血和經驗往上找裝備欄
+#PURPOSE ： 從血和經驗往上找裝備欄
+#取大圖後再切割成 12 小圖
 
 # constant
 g_equipment_width = 315
 g_equipment_height = 236
 
+#戰鬥畫面中血和 EXP 的圖案
 g_loophero_image = "images/loophero_blood_exp.jpg"
 g_confidence = 0.8
 
@@ -30,6 +32,7 @@ def main():
     rpa.maximize_window("LOOP HERO")
 
     while True:
+        #找得到血和 EXP 時
         b_find, l_pos = rpa.pic_exist_pos(g_loophero_image, g_confidence)
         if b_find == True:
             l_x = l_pos[0] - 275
@@ -39,6 +42,7 @@ def main():
             im = ImageGrab.grab(bbox=(l_x, l_y, l_right, l_bottom))
             im.save('temp/equipment.png', quality=95)
 
+            #切割找到的武器和裝備的大方格並切成 3*4 的格子
             for i in range(1, 13):
                 if i == 1 or i == 2 or i == 3 or i == 4:
                     l_x_tmp, l_y_tmp = l_x + ( g_equipment_width // 4 * (i - 1) ), l_y

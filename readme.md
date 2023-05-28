@@ -31,6 +31,15 @@
 >安裝 pyautogui 用於 RPA 相關操作  
 >pip install --ignore-installed --upgrade pyautogui
 
+>#ctrl+c 控制 RPA 用鍵盤組合鍵從縮小視窗中中斷程式
+>pip install --ignore-installed --upgrade keyboard
+
+>#pyperclip 變數放到記憶體
+>pip install --ignore-installed --upgrade pyperclip
+
+>#Pillow 圖像處理
+>pip install --ignore-installed --upgrade pillow
+
 2. PYCHARM 設置 ANACONDA 
 
 >建立新專，選擇 Add interpreter

@@ -1,6 +1,8 @@
 import LibRPA as rpa
 from PIL import ImageGrab
 
+#PURPOSE ： 從血和經驗往上找裝備欄 --- 取大圖未切割
+
 def main():
     # Pycharm PROJECT PythonRPA 縮到最小
     rpa.minimize_window("PythonRPA")
